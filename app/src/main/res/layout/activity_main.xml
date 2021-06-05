@@ -193,6 +193,15 @@
                     android:textColor="#FFFFFF"
                     android:textSize="24sp" />
 
+                <TextView
+                    android:id="@+id/bosluk1"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="TextView"
+                    android:textColor="#353a40"
+                    android:textSize="36sp" />
+
             </LinearLayout>
 
         </LinearLayout>
