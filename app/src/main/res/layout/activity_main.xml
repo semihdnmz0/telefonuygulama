@@ -7,6 +7,7 @@
     android:background="#353A40"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="75dp"
@@ -21,14 +22,182 @@
 
     <Button
         android:id="@+id/buttonmenu"
-        android:layout_width="57dp"
+        android:layout_width="184dp"
         android:layout_height="59dp"
+        android:layout_marginTop="60dp"
         android:background="#353A40"
-        android:backgroundTint="#353A40"
+        android:backgroundTint="#F44336"
         android:onClick="menu"
-        android:text="="
-        android:textSize="25sp"
+        android:text="Diziler"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toEndOf="@+id/filmm"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/filmm"
+        android:layout_width="184dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="60dp"
+        android:background="#353A40"
+        android:backgroundTint="#F44336"
+        android:text="Filmler"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="98dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:text="Filmler"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="381dp"
+        android:layout_height="738dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@+id/filmm">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="187dp"
+                android:layout_height="870dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/filmimageView1"
+                    android:layout_width="137dp"
+                    android:layout_height="221dp"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="film1"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/imagetextView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Yükleniyor..."
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/filmimageView2"
+                    android:layout_width="137dp"
+                    android:layout_height="221dp"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="film2"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/imagetextView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Yükleniyor..."
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/filmimageView3"
+                    android:layout_width="137dp"
+                    android:layout_height="221dp"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="film3"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/imagetextView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Yükleniyor..."
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="187dp"
+                android:layout_height="870dp"
+                android:layout_gravity="right"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/filmimageView4"
+                    android:layout_width="137dp"
+                    android:layout_height="221dp"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="film4"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/imagetextView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Yükleniyor..."
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/filmimageView5"
+                    android:layout_width="137dp"
+                    android:layout_height="221dp"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="film5"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/imagetextView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Yükleniyor..."
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/filmimageView6"
+                    android:layout_width="137dp"
+                    android:layout_height="221dp"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="film6"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/imagetextView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Yükleniyor..."
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

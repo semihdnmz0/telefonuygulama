@@ -8,72 +8,46 @@
     android:backgroundTint="#353A40"
     tools:context=".MainActivity2">
 
-    <Button
-        android:id="@+id/buttondiziler"
-        android:layout_width="137dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="192dp"
-        android:background="#353b70"
-        android:backgroundTint="#033B3D3F"
-        android:bufferType="normal"
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="98dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
         android:text="Diziler"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonmenukapa"
+        android:layout_width="184dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="60dp"
+        android:background="#353A40"
+        android:backgroundTint="#F44336"
+        android:onClick="menukapa"
+        android:text="Filmler"
         android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/dizii"
+        app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttondiziler3"
-        android:layout_width="137dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="36dp"
-        android:background="#353b70"
-        android:backgroundTint="#033B3D3F"
-        android:bufferType="normal"
-        android:text="top10"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttondiziler2" />
-
-    <Button
-        android:id="@+id/buttondiziler4"
-        android:layout_width="137dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="44dp"
-        android:background="#353b70"
-        android:backgroundTint="#033B3D3F"
-        android:bufferType="normal"
-        android:text="hrehrehjre"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttondiziler3" />
-
-    <Button
-        android:id="@+id/buttondiziler2"
-        android:layout_width="137dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="44dp"
-        android:background="#353b70"
-        android:backgroundTint="#033B3D3F"
-        android:bufferType="normal"
-        android:text="Filmler"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttondiziler" />
-
-    <Button
-        android:id="@+id/buttonmenukapa2"
-        android:layout_width="57dp"
+        android:id="@+id/dizii"
+        android:layout_width="184dp"
         android:layout_height="59dp"
+        android:layout_marginTop="60dp"
         android:background="#353A40"
-        android:backgroundTint="#353A40"
-        android:onClick="menukapa"
-        android:text="X"
+        android:backgroundTint="#F44336"
+        android:text="Diziler"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -87,5 +61,142 @@
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="381dp"
+        android:layout_height="738dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@+id/buttonmenukapa">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="187dp"
+                android:layout_height="870dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/diziimageView1"
+                    android:layout_width="137dp"
+                    android:layout_height="221dp"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="dizi1"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/imagetextView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Yükleniyor..."
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/diziimageView2"
+                    android:layout_width="137dp"
+                    android:layout_height="221dp"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="dizi2"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/imagetextView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Yükleniyor..."
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/diziimageView3"
+                    android:layout_width="137dp"
+                    android:layout_height="221dp"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="dizi3"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/imagetextView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Yükleniyor..."
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="187dp"
+                android:layout_height="870dp"
+                android:layout_gravity="right"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/diziimageView4"
+                    android:layout_width="137dp"
+                    android:layout_height="221dp"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="dizi4"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/imagetextView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Yükleniyor..."
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/diziimageView5"
+                    android:layout_width="137dp"
+                    android:layout_height="221dp"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="dizi5"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/imagetextView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Yükleniyor..."
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/diziimageView6"
+                    android:layout_width="137dp"
+                    android:layout_height="221dp"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="dizi6"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/imagetextView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Yükleniyor..."
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
